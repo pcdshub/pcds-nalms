@@ -1,4 +1,4 @@
-﻿#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
+#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
 0,TXI,,,,,,
 1,Test,,,,,,
 2,GMD_PVs,,,,,,
@@ -8,7 +8,10 @@
 3,GMD Keithley,,,,,,
 ,,EM1K0:GMD:ETM:01:SelectCurrentRange,Current range,TRUE,0,,
 ,,EM1K0:GMD:ETM:01:Reading,Current is changing,FALSE,10,,
+,,EM1K0:GMD:ETM:01:PutFunction,Measurement function,,,,
 ,,EM1K0:GMD:ETM:01:GetAvgCount,Reading to average,WRONG,0,,xxx
+,,EM2K0:XGMD:SHV:01:M0:C15:isOn,Electron multiplier powered on,,,,
+,,EM2K0:XGMD:SHV:01:M0:C15:VoltageMeasure,Electron multiplier voltage,,,,
 2,XGMD_test,,,,,,
 ,,EM2K0:XGMD:GSR:1:GetRotSpeed,Rotation speed,TRUE,0,,
 ,,EM2K0:XGMD:GSR:1:Calib:Pressure:Calc,Pressure,TRUE,0,,
@@ -23,5 +26,3 @@
 2,duplicated,,,,,,
 ,,EM1K0:GMD:ETM:01:SelectCurrentRange,Current range,TRUE,0,,
 ,,EM1K0:GMD:ETM:01:Reading,Current is changing,FALSE,10,,
-,,,,,,,
-1,Pos_test,MR1K4:SOMS:GCC:1:PRESS_RBV,GCC,,,,
