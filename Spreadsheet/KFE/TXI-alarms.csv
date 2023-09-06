@@ -25,4 +25,4 @@
 ,,MR1K4:SOMS:GCC:1:PRESS_RBV,GCC,,,,
 2,duplicated,,,,,,
 ,,EM1K0:GMD:ETM:01:SelectCurrentRange,Current range,TRUE,0,,
-,,EM1K0:GMD:ETM:01:Reading,Current is changing,FALSE,10,,
+,,EM1K0:GMD:ETM:01:Reading,Current is changing,TRUE,10,,
