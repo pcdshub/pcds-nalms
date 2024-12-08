@@ -43,6 +43,7 @@ jobs:
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
         export PRNUM=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
+        git add XML/
         git commit -am "CI/MNT: convert csv to xml from PR# $PRNUM"
         ls -R XML/
         git push
