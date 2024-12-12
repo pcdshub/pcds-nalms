@@ -6,11 +6,14 @@ from xml.dom import minidom
 
 import click
 
+from generate_cfgs import exptocfg
+
 
 def csvtoxml(infile, outfile, cname):
     """ convert CSV to XML suitable for Phoebus """
     config = ET.Element('config')
     config.set('name', cname)
+    expression_rows = []
 
     with open(infile, 'r', encoding='utf-8-sig') as fh:
         content = csv.DictReader(fh)
@@ -41,6 +44,8 @@ def csvtoxml(infile, outfile, cname):
                 if 'Guidance' in row and row['Guidance']:
                     guidance = ET.SubElement(pv, 'guidance')
                     guidance.text = row['Guidance']
+                if 'Expression' in row and row['Expression']:
+                    expression_rows.append(row)
 
         xm = minidom.parseString(ET.tostring(config, encoding='utf-8',
                                              xml_declaration=True,
@@ -50,6 +55,7 @@ def csvtoxml(infile, outfile, cname):
     with open(outfile, 'w', encoding='utf-8') as out:
         out.write(xm.toprettyxml(indent=" "*3))
     click.echo(f'Conversion of {infile} complete. See {outfile}')
+    exptocfg(cname, expression_rows)
 
 
 @click.command()
