@@ -1,10 +1,4 @@
 <?xml version="1.0" ?>
 <config name="QRIX-alarms">
-   <component name="QRIX">
-      <pv name="MR1K1:BEND:RTD:US:1_RBV">
-         <description>TEMPERATURE</description>
-         <latching/>
-         <delay/>
-      </pv>
-   </component>
+   <component name="QRIX"/>
 </config>
