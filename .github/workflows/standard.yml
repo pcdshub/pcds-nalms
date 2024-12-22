@@ -38,8 +38,9 @@ jobs:
         echo "$GITHUB_CONTEXT"
     - uses: ./.github/actions/validate_csv
     - uses: ./.github/actions/convert_csv_to_xml
+      id: convert
     - name: push to main
-      if: github.ref == 'refs/heads/master' && github.event_name == 'push' && ! git diff --quiet Spreadsheet/
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push' && ${{ steps.convert.outputs.hasdiff }} == 1
       run: |
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
