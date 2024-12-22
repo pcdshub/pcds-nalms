@@ -42,10 +42,29 @@ jobs:
             var fs = require('fs');
             var issue_number = Number(fs.readFileSync('./NR'));
             var diff_text = String(fs.readFileSync('./diff.txt'));
-
-            await github.rest.issues.createComment({
+            let tag = "<!--diffcomment--->";
+            diff_text = diff_text.concat(tag)
+            for await (const { data: comments } of github.paginate.iterator(github.rest.issues.listComments, {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: issue_number,
-              body: diff_text 
-            });
+              issue_number: issue_number
+            })) {
+              comment = comments.find((comment) => comment?.body?.includes(tag));
+              if (comment) {
+                await github.rest.issues.updateComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  comment_id: comment.id,
+                  body: diff_text
+                });
+                break;
+              }
+            }
+            if (!comment){
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: diff_text
+              });
+            }
