@@ -42,6 +42,10 @@ jobs:
     - name: push to main
       if: github.ref == 'refs/heads/master' && github.event_name == 'push' && ${{ steps.convert.outputs.hasdiff }} == 1
       run: |
+        echo ${{ steps.convert.outputs.hasdiff }}
+        if [[ ${{ steps.convert.outputs.hasdiff }} -eq 1 ]]; then
+          echo "equal"
+        fi
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
         export PRNUM=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
