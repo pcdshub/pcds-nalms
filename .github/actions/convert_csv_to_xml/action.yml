@@ -15,6 +15,8 @@ runs:
     - run: ls -R XML/
       shell: bash
     - run: |
-        git diff --quiet Spreadsheet/
-        echo "hasdiff=$?" >> $GITHUB_OUTPUT
+        git diff Spreadsheet/
+        output=$?
+        echo $output
+        echo "hasdiff=$output" >> $GITHUB_OUTPUT
       shell: bash
