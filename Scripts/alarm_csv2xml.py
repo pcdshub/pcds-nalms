@@ -21,7 +21,7 @@ def csvtoxml(infile, outfile, cname):
         stack.append(config)
         level = 0
         for row in content:
-            row.update((k, v.strip()) for k, v in row.items())
+            row.update((k, v.strip()) for k, v in row.items() if v is not None)
             if row['#Indent']:
                 level = int(row['#Indent'])
                 while len(stack) > level + 1:
