@@ -5,7 +5,8 @@ from string import ascii_uppercase
 def exptocfg(cname, expression_rows):
     with open(f'CFG/ioc-nalms-{cname}.cfg', 'w+') as cfg:
         # write all the boilerplate ioc stuff here
-        cfg.write('RELEASE=/cds/group/pcds/epics/ioc/common/nalms/R1.0.0\n\n')
+        #cfg.write('RELEASE=/cds/group/pcds/epics/ioc/common/nalms/R1.0.0\n\n')
+        cfg.write('RELEASE=/cds/group/pcds/epics-dev/kaushikm/ioc/common/nalms\n\n')
         for row in expression_rows:
             # default to empty string instead of None for formatting
             expression = {
@@ -31,11 +32,11 @@ def exptocfg(cname, expression_rows):
             ):
                 # doesn't make sense to use low severity for binary condition
                 if expression['HHSV']:
-                    expression['HIHI'] = 1
+                    expression['HIHI'] = 0
                 elif expression['HSV']:
-                    expression['HIGH'] = 1
+                    expression['HIGH'] = 0
                 else:
-                    expression['HIGH'] = 1
+                    expression['HIGH'] = 0
                     expression['HSV'] = 'MAJOR'
 
             # should I fail if no alarm limits/severities are defined?
@@ -46,6 +47,7 @@ def exptocfg(cname, expression_rows):
                 r'[a-zA-Z0-9_\-:.\[\]<>;]+:[a-zA-Z0-9_\-:.\[\]<>;]+',
                 expression['Expression'],
             )
+            pvs = [pv + " CPP" for pv in pvs]
             num_pvs = len(pvs)
             if num_pvs == 0:
                 # why would you use this without any pvs??
@@ -64,10 +66,10 @@ def exptocfg(cname, expression_rows):
 
             # padding for format
             pvs = pvs + [""] * (12 - len(pvs))
-            re.sub(
-                expression['Expression'],
-                get_field,
+            expression['Expression'] = re.sub(
                 r'[a-zA-Z0-9_\-:.\[\]<>;]+:[a-zA-Z0-9_\-:.\[\]<>;]+',
+                get_field,
+                expression['Expression'],
             )
             # instantiation for ioc
             cfg.write(
