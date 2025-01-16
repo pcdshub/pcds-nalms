@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
+#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance,Expression,LOLO,LLSV,LOW,LSV,HIGH,HSV,HIHI,HHSV
 0,TMO Beamline Devices,,,,,,
 1,Mirrors,,,,,,
 2,MR1K4,,,,,,
@@ -90,8 +89,8 @@
 2,ST1K4,,,,,,
 ,,ST1K4:TEST:MMS:STATE:ERR_RBV,ST1K4 error state,,,,
 ,,ST1K4:TEST:MMS:STATE:GET_RBV,ST1K4 state,,,PPS:NEH1:1:ST3K4INSUM!=0,
+,,ST1K4:TEST:MMS:STATE:COMP,ST1K4 state compared,,,,,PPS:NEH1:1:ST3K4INSUM!=0&ST1K4:TEST:MMS:STATE:GET_RBV=2,,,,,,,,
 ,,ST1K4:TEST:MMS:STATE:ST3K4_AUTO_RBV,ST1K4 follow ST3K4 status,,,,
-,,CMP:ST1K4:TEST:MMS:STATE:GET_RBV,ST1K4 and ST3K4 state,,,,,PPS:NEH1:1:ST3K4INSUM!=0&ST1K4:TEST:MMS:STATE:GET_RBV=2
 1,IP1,,,,,,
 2,Main Chamber Pressure,,,,,,
 ,,TMO:IP1:MAIN:GAUGE:PRESS_RBV,Gauge pressure,,,,
