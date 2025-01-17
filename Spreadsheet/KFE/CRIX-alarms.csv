@@ -1,2 +1,5 @@
 ﻿#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
 0,CRIX,,,,,,
+1,GMD high voltage,,,,,,
+,,EM2K0:XGMD:SHV:01:Crate:PowerOn,High voltage crate powered on,FALSE,0,,
+,,EM2K0:XGMD:SHV:01:M0:isSafetyLoopGood,Safety loop ok,FALSE,0,,
