@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config name="TST-alarms">
+   <component name="TST">
+      <pv name="MR4K2:KBV:FWM:1_RBV">
+         <description>Flow Sensor 1</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+   </component>
+</config>
