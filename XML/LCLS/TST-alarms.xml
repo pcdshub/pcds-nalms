@@ -6,5 +6,10 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="pva://DAQ:NEH:tmo:0:DeadFrac">
+         <description/>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>
