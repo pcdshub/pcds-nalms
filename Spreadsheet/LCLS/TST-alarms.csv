@@ -3,3 +3,4 @@
 ,,LM1K4:QADC:01:OUT0_EDGE1,QADC Signal Monitor,,,,
 ,,ca://LM1K4:QADC:01:OUT0_EDGE1,ca version,,,,
 ,,pva://LM1K4:QADC:01:OUT0_EDGE1,pva version,,,,
+,,pva://LM1K4:COM_MP2_DLY1,another pva,,,,
