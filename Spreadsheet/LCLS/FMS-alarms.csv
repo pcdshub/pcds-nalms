@@ -1,6 +1,7 @@
 #Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
 0,LCLS DEVICES,,,,,,
 1,MEC,,,,,,
+,,FMS:MEC:CEIL:TEMP:SVAL_RBV,MEC Amb Air Temp Ceiling,,,,
 2,Racks,,,,,,
 ,,FMS:MEC:R64A:HMD:SVAL_RBV,Rack Humidity,,,,
 ,,FMS:MEC:R64B:HMD:SVAL_RBV,Rack Humidity,,,,
@@ -30,7 +31,6 @@
 ,,FMS:MEC:SE:PCW:FWM:SUP,PCW Flow Supply,,,,
 ,,FMS:MEC:SE:PCW:FWM:RET,PCW Flow Return,,,,
 2,Laser,,,,,,
-,,FMS:MEC:VISAR:TEMP:SVAL_RBV,Visar Temperature,,,,
 ,,FMS:MEC:LAS:GLS:INT:TEMP:SVAL_RBV,Glass Rod Int Temperature,,,,
-,,FMS:MEC:LAS:GLS:EXT:TEMP:SVAL_RBV,Glass Rod Ext Temperature,,,,
-,,FMS:MEC:YFE:TEMP:SVAL_RBV,YFE Temperature,,,,
+,,FMS:MEC:YFE:EXT:TEMP:SVAL_RBV,YFE EXT Temperature,,,,
+,,FMS:MEC:YFE:INT:TEMP:SVAL_RBV,YFE INT Temperature,,,,
