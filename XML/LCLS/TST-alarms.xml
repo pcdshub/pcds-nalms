@@ -1,13 +1,18 @@
 <?xml version="1.0" ?>
 <config name="TST-alarms">
    <component name="TST">
-      <pv name="MR4K2:KBV:FWM:1_RBV">
-         <description>Flow Sensor 1</description>
+      <pv name="LM1K4:QADC:01:OUT0_EDGE1">
+         <description>QADC Signal Monitor</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="pva://DAQ:NEH:tmo:0:DeadFrac">
-         <description/>
+      <pv name="ca://LM1K4:QADC:01:OUT0_EDGE1">
+         <description>ca version</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="pva://LM1K4:QADC:01:OUT0_EDGE1">
+         <description>pva version</description>
          <latching>True</latching>
          <delay/>
       </pv>

@@ -1,4 +1,5 @@
 ﻿#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
 0,TST,,,,,,
-,,MR4K2:KBV:FWM:1_RBV,Flow Sensor 1,,,,
-,,pva://DAQ:NEH:tmo:0:DeadFrac,,,,,
+,,LM1K4:QADC:01:OUT0_EDGE1,QADC Signal Monitor,,,,
+,,ca://LM1K4:QADC:01:OUT0_EDGE1,ca version,,,,
+,,pva://LM1K4:QADC:01:OUT0_EDGE1,pva version,,,,
