@@ -31,5 +31,15 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="loc://a_number(42.2)">
+         <description>local value</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="sys://time">
+         <description>time</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>
