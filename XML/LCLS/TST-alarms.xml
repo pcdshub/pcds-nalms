@@ -21,5 +21,10 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="=majorAlarm(1&gt;0,TestString)">
+         <description>formula first pass</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>
