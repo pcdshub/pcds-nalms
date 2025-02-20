@@ -26,5 +26,10 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="eq://minorAlarm(2 == 2, AnArbitrary String)">
+         <description>formula with other protocol</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>

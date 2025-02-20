@@ -5,3 +5,4 @@
 ,,pva://LM1K4:QADC:01:OUT0_EDGE1,pva version,,,,
 ,,pva://LM1K4:COM_MP2_DLY1,another pva,,,,
 ,,=majorAlarm(1>0\,TestString),formula first pass,,,,
+,,eq://minorAlarm(2 == 2\, AnArbitrary String),formula with other protocol,,,,
