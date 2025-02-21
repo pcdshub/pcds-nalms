@@ -1,3 +1,4 @@
 ﻿#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
 0,TST,,,,,,
 ,,LM1K4:QADC:01:OUT0_EDGE1,QADC Signal Monitor,,,,
+,,LM1K4:COM_MP2_DLY1,QADC Signal Monitor,,,,

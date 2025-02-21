@@ -6,5 +6,10 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="LM1K4:COM_MP2_DLY1">
+         <description>QADC Signal Monitor</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>
