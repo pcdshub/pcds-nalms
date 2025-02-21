@@ -1,13 +1,3 @@
 ﻿#Indent,Branch,PV,Description,Latch,Delay,Filter,Guidance
 0,TST,,,,,,
 ,,LM1K4:QADC:01:OUT0_EDGE1,QADC Signal Monitor,,,,
-,,ca://LM1K4:QADC:01:OUT0_EDGE1,ca version,,,,
-,,pva://LM1K4:QADC:01:OUT0_EDGE1,pva version,,,,
-,,pva://LM1K4:COM_MP2_DLY1,another pva,,,,
-,,=majorAlarm(1>0\,"TestString"),formula first pass,,,,
-,,eq://minorAlarm(2 == 2\, "AnArbitrary String"),formula with other protocol,,,,
-,,loc://a_number(42.2),local value,,,,
-,,eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` > 1.726\,""),formula with pv,,,,
-,,eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` > 1.726 ""),formula with pv,,,,
-,,eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` > 1.726\,"lorum"),formula with pv,,,,
-,,eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` > 1.726 "ipsum"),formula with pv,,,,

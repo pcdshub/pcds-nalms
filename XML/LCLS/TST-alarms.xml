@@ -6,55 +6,5 @@
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="ca://LM1K4:QADC:01:OUT0_EDGE1">
-         <description>ca version</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="pva://LM1K4:QADC:01:OUT0_EDGE1">
-         <description>pva version</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="pva://LM1K4:COM_MP2_DLY1">
-         <description>another pva</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="=majorAlarm(1&gt;0,&quot;TestString&quot;)">
-         <description>formula first pass</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="eq://minorAlarm(2 == 2, &quot;AnArbitrary String&quot;)">
-         <description>formula with other protocol</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="loc://a_number(42.2)">
-         <description>local value</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726,&quot;&quot;)">
-         <description>formula with pv</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726 &quot;&quot;)">
-         <description>formula with pv</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726,&quot;lorum&quot;)">
-         <description>formula with pv</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726 &quot;ipsum&quot;)">
-         <description>formula with pv</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
    </component>
 </config>
