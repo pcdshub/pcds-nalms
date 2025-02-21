@@ -36,8 +36,28 @@
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="sys://time">
-         <description>time</description>
+      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726)">
+         <description>formula with pv</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726,&quot;&quot;)">
+         <description>formula with pv</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726 &quot;&quot;)">
+         <description>formula with pv</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726,&quot;lorum&quot;)">
+         <description>formula with pv</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="eq://majorAlarm(`MR1K4:SOMS:FWM:1_RBV` &gt; 1.726 &quot;ipsum&quot;)">
+         <description>formula with pv</description>
          <latching>True</latching>
          <delay/>
       </pv>
