@@ -11,5 +11,10 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="MR1K4:SOMS:FWM:1_RBV">
+         <description>mon</description>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>
