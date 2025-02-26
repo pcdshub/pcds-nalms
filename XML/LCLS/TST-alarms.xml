@@ -1,23 +1,8 @@
 <?xml version="1.0" ?>
 <config name="TST-alarms">
    <component name="TST">
-      <pv name="LM1K4:QADC:01:OUT0_EDGE1">
-         <description>QADC Signal Monitor</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="LM1K4:COM_MP2_DLY1">
-         <description>QADC Signal Monitor</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="MR1K4:SOMS:FWM:1_RBV">
-         <description>mon</description>
-         <latching>True</latching>
-         <delay/>
-      </pv>
-      <pv name="MR1K4:SOMS:FWM:2_RBV">
-         <description>mon2</description>
+      <pv name="eq://minorAlarm((abs(SL1K0:POWER:ACTUAL_YWIDTH_RBV) * 1000) &gt; AT1K0:GAS_MA_Y:MMS:1, &quot;&quot;)">
+         <description>slits too wide</description>
          <latching>True</latching>
          <delay/>
       </pv>
