@@ -14,7 +14,7 @@ def csvtoxml(infile, outfile, cname):
     config.set('name', cname)
 
     with open(infile, 'r', encoding='utf-8-sig') as fh:
-        content = csv.DictReader(fh)
+        content = csv.DictReader(fh, escapechar='\\')
         stack = []
         stack.append(config)
         level = 0
