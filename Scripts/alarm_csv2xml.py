@@ -41,16 +41,18 @@ def csvtoxml(infile, outfile, cname):
                     else:
                         raise ValueError(f'Got unsupported protocol "{protocol}" in {pv_name}')
                 pv.set('name', pv_name)
-                desc = ET.SubElement(pv, 'description')
-                desc.text = row['Description']
+                if row.get('Description', False):
+                    desc = ET.SubElement(pv, 'description')
+                    desc.text = row['Description']
                 latch = ET.SubElement(pv, 'latching')
-                latch.text = row['Latch'].capitalize() if row['Latch'] else 'True'
-                delay = ET.SubElement(pv, 'delay')
-                delay.text = row['Delay']
-                if 'Filter' in row and row['Filter']:
+                latch.text = row['Latch'].capitalize() if row['Latch'] else "True"
+                if row.get('Delay', False):
+                    delay = ET.SubElement(pv, 'delay')
+                    delay.text = row['Delay']
+                if row.get('Filter', False):
                     filter = ET.SubElement(pv, 'filter')
                     filter.text = row['Filter']
-                if 'Guidance' in row and row['Guidance']:
+                if row.get('Guidance', False):
                     guidance = ET.SubElement(pv, 'guidance')
                     guidance.text = row['Guidance']
 
