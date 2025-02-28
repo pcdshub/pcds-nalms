@@ -21,5 +21,15 @@
          <latching>True</latching>
          <delay/>
       </pv>
+      <pv name="eq://majorAlarm(MR3K4:KBO:COATING:STATE:GET_RBV==B4C, &quot;&quot;)">
+         <description/>
+         <latching>True</latching>
+         <delay/>
+      </pv>
+      <pv name="eq://majorAlarm(MR3K4:KBO:COATING:STATE:GET_RBV==2, &quot;&quot;)">
+         <description/>
+         <latching>True</latching>
+         <delay/>
+      </pv>
    </component>
 </config>
