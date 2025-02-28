@@ -6,17 +6,17 @@
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="major://SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 2  &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 1">
+      <pv name="eq://majorAlarm(SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 2  &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 1, &quot;&quot;)">
          <description>Slit too far</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="major://(SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 2  &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 1) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 6.8 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 2) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 8 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 3) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 8.5 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 4)">
+      <pv name="eq://majorAlarm((SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 2  &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 1) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 6.8 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 2) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 8 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 3) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 8.5 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 4), &quot;&quot;)">
          <description>all slits</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="major://(PPS:NEH1:1:ST3K4INSUM == 1) &amp;&amp; (ST1K4:TEST:MMS:STATE:GET_RBV == 2)">
+      <pv name="eq://majorAlarm((PPS:NEH1:1:ST3K4INSUM == 1) &amp;&amp; (ST1K4:TEST:MMS:STATE:GET_RBV == 2), &quot;&quot;)">
          <description>both in</description>
          <latching>True</latching>
          <delay/>
