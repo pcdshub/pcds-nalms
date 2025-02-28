@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
 <config name="TST-alarms">
    <component name="TST">
-      <pv name="LM1K4:QADC:01:OUT0_EDGE1">
-         <description>QADC Signal Monitor</description>
+      <pv name="LM1K4:QADC:01:OUT0_EDGE2">
+         <description>QADC Signal Monitor 2</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="LM1K4:COM_MP2_DLY1">
-         <description>QADC Signal Monitor</description>
+      <pv name="major://SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 2  &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 1">
+         <description>Slit too far</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="MR1K4:SOMS:FWM:1_RBV">
-         <description>mon1</description>
+      <pv name="major://(SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 2  &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 1) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 6.8 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 2) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 8 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 3) || (SL1K0:POWER:ACTUAL_YWIDTH_RBV &gt; 8.5 &amp;&amp; AT1K0:GAS_MAA:01:Y:STATE:GET_RBV == 4)">
+         <description>all slits</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="MR1K4:SOMS:FWM:2_RBV">
-         <description>mon2</description>
+      <pv name="major://(PPS:NEH1:1:ST3K4INSUM == 1) &amp;&amp; (ST1K4:TEST:MMS:STATE:GET_RBV == 2)">
+         <description>both in</description>
          <latching>True</latching>
          <delay/>
       </pv>
