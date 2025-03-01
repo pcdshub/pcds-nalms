@@ -1,27 +1,27 @@
 <?xml version="1.0" ?>
 <config name="TST-alarms">
    <component name="TST">
-      <pv name="eq://majorAlarm(SIOC:SYS0:ML00:AO628 &lt;= 450 &amp; MR1K4:SOMS:COATING:STATE:GET_RBV==2, &quot;&quot;)">
+      <pv name="eq://majorAlarm(SIOC:SYS0:ML00:AO628 &lt;= 450 &amp;&amp; MR1K4:SOMS:COATING:STATE:GET_RBV==2, &quot;&quot;)">
          <description>MR1K4 Coating</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="eq://majorAlarm(SIOC:SYS0:ML00:AO628 &lt;= 450 &amp; MR2K4:KBO:COATING:STATE:GET_RBV==2, &quot;&quot;)">
+      <pv name="eq://majorAlarm(SIOC:SYS0:ML00:AO628 &lt;= 450 &amp;&amp; MR2K4:KBO:COATING:STATE:GET_RBV==2, &quot;&quot;)">
          <description>MR2K4 Coating</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="eq://majorAlarm(SIOC:SYS0:ML00:AO628 &lt;= 450 &amp; MR3K4:KBO:COATING:STATE:GET_RBV==2, &quot;&quot;)">
+      <pv name="eq://majorAlarm(SIOC:SYS0:ML00:AO628 &lt;= 450 &amp;&amp; MR3K4:KBO:COATING:STATE:GET_RBV==2, &quot;&quot;)">
          <description>MR3K4 Coating</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="eq://minorAlarm((ST1K4:TEST:MMS:STATE:GET_RBV!=PPS:NEH1:1:ST3K4INSUM)&amp;&amp;(PPS:NEH1:1:ST3K4INSUM==0), &quot;&quot;)">
+      <pv name="eq://minorAlarm((ST1K4:TEST:MMS:STATE:GET_RBV!=1 &amp;&amp; PPS:NEH1:1:ST3K4INSUM==0), &quot;&quot;)">
          <description>ST1K4 state</description>
          <latching>True</latching>
          <delay/>
       </pv>
-      <pv name="eq://majorAlarm((ST1K4:TEST:MMS:STATE:GET_RBV!=PPS:NEH1:1:ST3K4INSUM)&amp;&amp;(PPS:NEH1:1:ST3K4INSUM==1), &quot;&quot;)">
+      <pv name="eq://majorAlarm((ST1K4:TEST:MMS:STATE:GET_RBV!=2 &amp;&amp; PPS:NEH1:1:ST3K4INSUM==1), &quot;&quot;)">
          <description>ST1K4 state</description>
          <latching>True</latching>
          <delay/>
@@ -29,22 +29,22 @@
    </component>
    <component name="KFE BEAMLINES">
       <component name="SL1K0">
-         <pv name="eq://majorAlarm((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;2 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;2)&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==1, &quot;&quot;)">
+         <pv name="eq://majorAlarm(((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;2 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;2)&amp;&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==1), &quot;&quot;)">
             <description>SL1K0 depending on AT1K0</description>
             <latching>True</latching>
             <delay/>
          </pv>
-         <pv name="eq://majorAlarm((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;6.8 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;6.8)&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==2, &quot;&quot;)">
+         <pv name="eq://majorAlarm(((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;6.8 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;6.8)&amp;&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==2), &quot;&quot;)">
             <description>SL1K0 depending on AT1K0</description>
             <latching>True</latching>
             <delay/>
          </pv>
-         <pv name="eq://majorAlarm((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;8 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;8)&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==3, &quot;&quot;)">
+         <pv name="eq://majorAlarm(((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;8 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;8)&amp;&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==3), &quot;&quot;)">
             <description>SL1K0 depending on AT1K0</description>
             <latching>True</latching>
             <delay/>
          </pv>
-         <pv name="eq://majorAlarm((SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;8.5 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;8.5)&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==4, &quot;&quot;)">
+         <pv name="eq://majorAlarm(SL1K0:POWER:ACTUAL_YWIDTH_RBV&gt;8.5 || SL1K0:POWER:ACTUAL_XWIDTH_RBV&gt;8.5)&amp;&amp;AT1K0:GAS_MAA:01:Y:STATE:GET_RBV==4), &quot;&quot;)">
             <description>SL1K0 depending on AT1K0</description>
             <latching>True</latching>
             <delay/>
