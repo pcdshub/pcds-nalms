@@ -14,11 +14,10 @@
          <latching>True</latching>
       </pv>
       <pv name="eq://minorAlarm((ST1K4:TEST:MMS:STATE:GET_RBV!=1 &amp;&amp; PPS:NEH1:1:ST3K4INSUM==0), &quot;&quot;)">
-         <description>ST1K4 state</description>
          <latching>True</latching>
       </pv>
       <pv name="eq://majorAlarm((ST1K4:TEST:MMS:STATE:GET_RBV!=2 &amp;&amp; PPS:NEH1:1:ST3K4INSUM==1), &quot;&quot;)">
-         <description>ST1K4 state</description>
+         <description>ST1K4 state 2</description>
          <latching>True</latching>
       </pv>
    </component>
