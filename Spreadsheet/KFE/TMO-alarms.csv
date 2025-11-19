@@ -2,7 +2,7 @@
 0,TMO Beamline Devices,,,,,,
 1,MPODs,,,,,,
 2,MPOD01,,,,,,
-,,TMO:MPOD:01:M0:isModuleGood,Module 0 Fault Alarm,FALSE,,,
+,,TMO:WHAAAAT:01:M0:isModuleGood,Module 0 Fault Alarm,FALSE,,,
 ,,TMO:MPOD:01:M1:isModuleGood,Module 1 Fault Alarm,FALSE,,,
 ,,TMO:MPOD:01:M2:isModuleGood,Module 2 Fault Alarm,FALSE,,,
 ,,TMO:MPOD:01:M3:isModuleGood,Module 3 Fault Alarm,FALSE,,,
