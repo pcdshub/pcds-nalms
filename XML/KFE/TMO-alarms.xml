@@ -549,7 +549,15 @@
             <description>PMPS override error</description>
             <latching>False</latching>
          </pv>
+         <pv name="eq://majorAlarm(EM1K0:GMD:HPS:AvgPulseIntensity&gt;TMO:PMPS:MAX:ENERGY, &quot;&quot;)">
+            <description>PMPS override error</description>
+            <latching>False</latching>
+         </pv>
          <pv name="eq://majorAlarm(EM1K0:GMD:HPS:milliJoulesPerPulse_1MIN_AVG&gt;PMPS:KFE:IntensityJF_RBV, &quot;&quot;)">
+            <description>PMPS override error</description>
+            <latching>False</latching>
+         </pv>
+         <pv name="eq://majorAlarm(EM1K0:GMD:HPS:milliJoulesPerPulse_1MIN_AVG&gt;TMO:PMPS:MAX:ENERGY, &quot;&quot;)">
             <description>PMPS override error</description>
             <latching>False</latching>
          </pv>
