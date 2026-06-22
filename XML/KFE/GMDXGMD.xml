@@ -188,11 +188,6 @@
                <latching>False</latching>
                <delay>0</delay>
             </pv>
-            <pv name="EM1K0:GMD:HPS:AvgPhotonsPerPulse_1MIN_MIN">
-               <description>Peak of pulse</description>
-               <latching>False</latching>
-               <delay>0</delay>
-            </pv>
             <pv name="EM1K0:GMD:HPS:RunningAvgDisCycleNum">
                <description>Background noise disable</description>
                <latching>False</latching>
@@ -715,11 +710,6 @@
          <component name="XGMD ATCA digitizer">
             <pv name="EM2K0:XGMD:HPS:NumSamples">
                <description>Number of samples for pulse</description>
-               <latching>False</latching>
-               <delay>0</delay>
-            </pv>
-            <pv name="EM2K0:XGMD:HPS:AvgPhotonsPerPulse_1MIN_MIN">
-               <description>Peak of pulse</description>
                <latching>False</latching>
                <delay>0</delay>
             </pv>
