@@ -13,7 +13,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     steps:
       - name: 'Download artifact'
-        uses: actions/github-script@v7
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
         with:
           script: |
             var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
@@ -35,7 +35,7 @@ jobs:
       - run: unzip pr.zip
 
       - name: 'Comment on PR'
-        uses: actions/github-script@v7
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
         with:
           github-token: ${{ secrets.COMMENT_TOKEN }}
           script: |
